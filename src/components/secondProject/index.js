@@ -3,8 +3,8 @@ import SearchBar from './SearchBar'
 import axios from 'axios';
 
  class MainPage extends Component {
-
-
+ 
+  
     onSubmit = (value) => {
         console.log("Value",value)
         axios.get('https://api.unsplash.com/search/photos',{
