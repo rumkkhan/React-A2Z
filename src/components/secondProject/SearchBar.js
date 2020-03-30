@@ -4,15 +4,14 @@ import React from 'react';
 class SearchBar extends React.Component{
     
     state = {term : ''}
-    onInputChange = (event) => {
-            console.log('heelo',event.target.value)
-    }
 
     onFormSubmit = (e) =>{
         e.preventDefault();
-        console.log('term',this.state.term)
+      
+        this.props.onSubmit(this.state.term)
     }
     render(){
+        
         return(
             <div className="ui segment">
                 <form className="ui form" onSubmit={this.onFormSubmit}>

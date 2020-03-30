@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Box from './components/Box';
-import SearchBar from './components/secondProject/SearchBar';
+import MainPage from './components/secondProject/';
 
 
 
@@ -15,7 +15,7 @@ class  App extends React.Component {
     render() {
     return(
       <div className="ui container">
-        <SearchBar />
+        <MainPage />
       </div>      
     ) 
 };
