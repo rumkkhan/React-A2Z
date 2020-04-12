@@ -14,7 +14,7 @@ import ImageList from './ImageList';
     const response =  await  unsplash.get('/search/photos',{
             params: {query: value}
         })
-        debugger
+        
         this.setState({images:response.data.results})
      
     }
