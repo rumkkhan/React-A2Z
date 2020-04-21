@@ -11,7 +11,7 @@ import React, { Component } from 'react'
     } 
     onFormSubmit = (e) => {
             e.preventDefault();
-         console.log(this.state.term)   
+         this.props.onTermSubmit(this.state.term)
     }
     render() {
         return (
