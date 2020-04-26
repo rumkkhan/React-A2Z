@@ -5,9 +5,8 @@ import Box from './components/Box';
 import MainPage from './components/secondProject/';
 import ThirdApp from './components/ThirdProject/index'
 import ReduxIndex from './components/ReactRedux/Index';
-import {Provider} from 'react-redux';
-import {createStore} from  'redux';
-import reducers from './components/ReactRedux/Reducer'
+import TestComponent from './components/ForthProjectTest'
+import Root from './Root'
 
 
 
@@ -18,13 +17,14 @@ class  App extends React.Component {
 
     render() {
     return(
-      <Provider  store={createStore(reducers)}>
+      <Root>
           <div className="ui container">
                   {/* <MainPage /> */}
                   {/* <ThirdApp /> */}
-                  <ReduxIndex />
+                  {/* <ReduxIndex /> */}
+                  <TestComponent />
                 </div> 
-      </Provider>
+      </Root>
           
     ) 
 };
