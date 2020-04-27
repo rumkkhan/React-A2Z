@@ -6,7 +6,8 @@ import MainPage from './components/secondProject/';
 import ThirdApp from './components/ThirdProject/index'
 import ReduxIndex from './components/ReactRedux/Index';
 import TestComponent from './components/ForthProjectTest'
-import Root from './Root'
+import Root from './Root';
+
 
 
 
