@@ -12,7 +12,7 @@ class CommentBox extends React.Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.saveComment(this.state.comment)
+        // this.props.saveComment(this.state.comment)
         this.setState({comment: ''})
     }
 
@@ -26,11 +26,11 @@ class CommentBox extends React.Component{
                     <button type="submit">Submit Comment</button>
                 </div>
             </form>
-                <button className="fetch-comments" onClick={this.props.fetchComments}> Fetch Comments</button>
+                {/* <button className="fetch-comments" onClick={this.props.fetchComments}> Fetch Comments</button> */}
             </div>
          
       );
     }
 }
-
-export default connect(null,actions)(CommentBox);
+export default CommentBox;
+// export default connect(null,actions)(CommentBox);
