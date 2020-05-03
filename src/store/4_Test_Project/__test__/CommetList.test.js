@@ -4,23 +4,28 @@ import { mount } from 'enzyme';
 import CommentList  from '../../../components/ForthProjectTest/CommentList';
 import Root from '../../../Root';
 
-let wrapped;
+
+
+let wrapped ;
 
 beforeEach(() => {
     const initialState = {
-        comments: ['Comment 1', 'Comment 2']
-    };
-    wrapped = mount(<Root initialState={initialState}>  
-                <CommentList />  
-        </Root>);
-});
+        comments:['Comment 1','Comment 2']
+    }
+     wrapped = mount(
+     <Root initialState={initialState}>
+         <CommentList />
+     </Root>)
+})
 
 
-it('creates one LI per comment', () => {
-         expect(wrapped.find('li').length).toEqual(2);
-});
+it('creates 2 liS ', () => {
+       
+    expect(wrapped.find('li').length).toEqual(2);
+})
 
-it('shows  the text  for each comment',() => {
+it('displayes on the screen', () => {
     expect(wrapped.render().text()).toContain('Comment 1');
     expect(wrapped.render().text()).toContain('Comment 2');
+
 })
