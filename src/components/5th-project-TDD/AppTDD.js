@@ -19,6 +19,10 @@ class AppTDD extends React.Component {
         this.setState({gifts: gifts});
 
     }
+    removeGift = id => {
+         const  gifts = this.state.gifts.filter(gift => gift.id !== id);
+          this.setState({gifts})
+    }
     render() {
         return(
             <div>
@@ -26,11 +30,15 @@ class AppTDD extends React.Component {
                <div className="gift-list">
                {
                    this.state.gifts.map(gift => (
-                       <div key={gift.id}></div>
+                       <Gifts
+                        key={gift.id}
+                        gift={gift}
+                        removeGift = {this.removeGift}
+                        />
                    ))
                }
               </div>
-              <Gifts />
+            
                <Button onClick={this.addGift} className="btn-add">Add Gift</Button>
             </div>
         );
