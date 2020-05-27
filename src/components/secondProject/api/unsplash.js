@@ -6,4 +6,4 @@ export default axios.create({
     headers: {
         Authorization: 'Client-ID '
     } 
-});   
+});    

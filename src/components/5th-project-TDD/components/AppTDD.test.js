@@ -5,9 +5,7 @@ import AppTDD from '../AppTDD'
 
 
 describe('App', () => {
-    
     const app = shallow(<AppTDD />);
-
     it('renders correctly', () => {
         expect(app).toMatchSnapshot();
     })
