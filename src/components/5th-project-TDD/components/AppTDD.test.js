@@ -9,7 +9,6 @@ describe('App', () => {
     it('renders correctly', () => {
         expect(app).toMatchSnapshot();
     })
-    
     it('initializes the `state` with an empty list of gifts',() => {
          
         expect(app.state().gifts).toEqual([])
