@@ -13,7 +13,6 @@ describe('App', () => {
          
         expect(app.state().gifts).toEqual([])
     })
-
     describe('when clicking `Add-gift` Button', () =>{
         const id = 1;
             beforeEach(() => {
