@@ -30,8 +30,7 @@ describe('App', () => {
 
         it('creates a git component', () => {
             expect(app.find('Gift').exists()).toBe(true)
-        })
-    
+        })  
         describe('and user want to remove the added gift',() => {
             beforeEach(() => {
                  app.instance().removeGift(id);
