@@ -27,7 +27,6 @@ describe('App', () => {
         it('adds a new gifts  to the rendered   ', () => {        
             expect(app.find('.gift-list').children().length).toEqual(1);
         })
-
         it('creates a git component', () => {
             expect(app.find('Gift').exists()).toBe(true)
         })  
